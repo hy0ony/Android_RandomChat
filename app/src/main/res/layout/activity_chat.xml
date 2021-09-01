@@ -18,15 +18,33 @@
         android:paddingRight="15dp"
         android:layout_weight="9">
 
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recycleView"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:scrollbars="vertical"
-            android:background="@drawable/customborder"
-            />
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_opName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="11"
+                android:background="#d1d4d6"
+                android:text="name"
+                android:textSize="20dp"
+                android:gravity="center"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycleView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scrollbars="vertical"
+                android:background="@drawable/customborder"
+                />
+
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -54,7 +72,7 @@
             >
 
             <ImageButton
-                android:id="@+id/btn_"
+                android:id="@+id/btn_profile"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -62,6 +80,7 @@
                 android:background="#fff"
                 />
             <ImageButton
+                android:id="@+id/btn_chat"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -69,6 +88,7 @@
                 android:background="#fff"
                 />
             <ImageButton
+                android:id="@+id/btn_menu"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
