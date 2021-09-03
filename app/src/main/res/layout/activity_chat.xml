@@ -24,6 +24,7 @@
             android:layout_weight="1"
             android:orientation="vertical">
 
+            <!-- 상대방 이름 띄우는 창 -->
             <TextView
                 android:id="@+id/txt_opName"
                 android:layout_width="match_parent"
@@ -35,6 +36,7 @@
                 android:gravity="center"
                 />
 
+            <!-- 채팅 내용 -->
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recycleView"
                 android:layout_width="match_parent"
@@ -46,6 +48,7 @@
 
         </LinearLayout>
 
+        <!-- 메세지 입력 & 전송 버튼 -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="60dp"
@@ -64,13 +67,14 @@
         </LinearLayout>
     </LinearLayout>
 
+        <!-- Footer -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:orientation="horizontal"
             android:background="@drawable/customborder"
             >
-
+            <!-- 프로필 버튼 -->
             <ImageButton
                 android:id="@+id/btn_profile"
                 android:layout_width="match_parent"
@@ -79,6 +83,8 @@
                 android:src="@drawable/baseline_person_outline_24"
                 android:background="#fff"
                 />
+
+            <!-- 채팅 버튼 -->
             <ImageButton
                 android:id="@+id/btn_chat"
                 android:layout_width="match_parent"
@@ -87,6 +93,8 @@
                 android:src="@drawable/baseline_chat_bubble_outline_24"
                 android:background="#fff"
                 />
+
+            <!-- 메뉴 버튼 -->
             <ImageButton
                 android:id="@+id/btn_menu"
                 android:layout_width="match_parent"
