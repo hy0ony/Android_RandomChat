@@ -36,15 +36,15 @@
                 android:gravity="center"
                 />
 
-            <!-- 채팅 내용 -->
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/recycleView"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:scrollbars="vertical"
-                android:background="@drawable/customborder"
-                />
+                <!-- 채팅 내용 -->
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycleView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/customborder"
+                    android:scrollbars="vertical" />
+
 
         </LinearLayout>
 
@@ -104,8 +104,6 @@
                 android:background="#fff"
                 />
         </LinearLayout>
-
-
 
 
 </LinearLayout>

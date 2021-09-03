@@ -29,11 +29,11 @@ public class ChatActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chat);
-        setContentView(R.layout.activity_chat);
 
         btn_send = findViewById(R.id.btn_send);
         editText_chat = findViewById(R.id.editText_chat);
 
+        /* 전송 버튼 */
         btn_send.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
