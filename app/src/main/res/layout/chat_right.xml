@@ -1,6 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-</LinearLayout>
+    <TextView
+        android:id="@+id/txt_myName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="내 이름"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="6dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:id="@+id/img_me"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/txt_myName"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="6dp"
+        android:src="@mipmap/ic_launcher"
+        android:scaleType="fitCenter"/>
+
+    <TextView
+        android:id="@+id/txt_chat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="18dp"
+        android:layout_toLeftOf="@+id/img_me"
+        android:layout_below="@+id/txt_myName"
+        android:text="안녕하세요" />
+
+
+</RelativeLayout>
